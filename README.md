@@ -78,7 +78,7 @@ Role:orig/amp/bot/rk
 Verd:tr/ag/ev/src
 Num:D%/typ/acc
 Net:clu/repost/infl
-FMT:Per Acc Tag:@
+FMT:Per Acc
 ```
 
 
