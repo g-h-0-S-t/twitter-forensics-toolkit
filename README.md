@@ -32,7 +32,7 @@ Numeric summary: Disinfo% & dominant type per account!
 Detailed forensic analysis of networks and tactics.
 
 ```text
-@grok @AskPerplexity SCAN thr+acc:1:TLs bias/D/coord(hist+trend+ev) 2:Media img/vid/AI/deepfake/EXIF 3:%D/M/F/P/twt+acc±2% 4:Ideo L/R/Rel/St/Natl(src+score/10) 5:Metrics age/vrf/fol/eng/coord/intent/persona Out:%tot,types,risk tiers+EVID FMT:TL|Med|Pct|Ideo|Met|Vrf|Ev|Src
+@grok @AskPerplexity SCAN thr+acc 1:TLs bias/D/coord(hist+trend+ev) 2:Media img/vid/AI/deepfake/EXIF 3:%D/M/F/P/twt+acc±2% 4:Ideo L/R/Rel/St/Natl(src+score/10) 5:Metrics age/vrf/fol/eng/coord/intent/persona Out:%tot,types,risk tiers+EVID FMT:TL|Med|Pct|Ideo|Met|Vrf|Ev|Src
 ```
 
 ### 3. Full Forensic Analysis
