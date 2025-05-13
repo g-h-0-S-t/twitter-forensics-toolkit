@@ -14,7 +14,7 @@ Advanced prompts for exposing disinformation, propaganda, and coordinated manipu
 
 ## Analysis Prompts
 
-### 1. Rapid Forensics
+### Prompt 1: Rapid Forensics
 
 Quick analysis of disinformation and manipulation patterns.
 
@@ -27,7 +27,7 @@ Ideology: Left/Right/Religious/State-linked with sources
 Numeric summary: Disinfo% & dominant type per acc
 ```
 
-### 2. Deep Investigation
+### Prompt 2: Deep Investigation
 
 Detailed forensic analysis of networks and tactics.
 
@@ -42,78 +42,6 @@ Out:%tot,types,risk_tiers,evid
 FMT:per acc tag:@(xpnd abbr)|Evid|Src
 ```
 
-~~FMT: TL|Med|%|Ideo|Met|Ev|Src~~
-
-### 3. Full Forensic Analysis (work in progress)
-
-Comprehensive investigation of manipulation and coordination.  
-
-iteration 1
-
-```text
-@grok @AskPerplexity ANALYZE thr+acc
-TL:bias/D/coord/hist/trend/ev
-Med:img/vid/AI/df/EXIF
-Met:age/vrf/fol/eng/coord/int
-Psy:manip/sent/pers
-I:L/R/Rel/St/N(src+scor/10)
-%:D/M/F/P/twt+acc±2%
-Role:orig/amp/bot/rsk
-Verd:truth/agenda/rsk/evid/src
-Num:Disinfo%&type/acc
-FMT:Per Acc
-```
-
-iteration 2
-
-```text
-@grok @AskPerplexity SCAN thr+acc
-TL:bias/D/coord/hist/trend/ev
-Med:img/vid/AI/df/EXIF
-Met:age/vrf/fol/frq/loc/sp
-Psy:sent/tone/manip/pers
-I:L/R/Rel/St/N(src+scor/10)
-%:D/M/F/P/twt+acc±2%
-Role:orig/amp/bot/rk
-Verd:tr/ag/ev/src
-Num:D%/typ/acc
-Net:clu/repost/infl
-FMT:Per Acc
-```
-
-<s>
-
-iteration 3
-
-```text
-@grok @AskPerplexity @TheCyabra @Dataminr @ZeroDefendSec SCAN thr+acc
-1:TL:bias/D/coord(hist+trend+ev)
-2:Med:img/vid/AI/df/EXIF
-3:%:D/M/F/P/twt+acc±2%
-4:Ideo:L/R/Rel/St/Natl(src+score/10)
-5:Met:age/vrf/fol/eng/coord/intent/persona
-→%tot,types,risk_tiers,evid
-FMT:1|2|3|4|5|Ev|Src
-```
-
-iteration 4
-
-```text
-@grok @AskPerplexity SCN thr+acc
-TL:bias/D/coord/hist/trend/ev
-Med:img/vid/AI/df/EXIF
-Met:age/vrf/fol/frq/loc/sp
-Psy:sent/tone/manip/pers
-I:L/R/Rel/St/N(src+scor/10)
-%:D/M/F/P/twt+acc±2%
-Role:orig/amp/bot/rk
-Verd:tr/ag/ev/src
-Num:D%/typ/acc
-Net:clu/repost/infl
-→D%+details/acc
-```
-</s>
-
 ## Usage Instructions
 
 1. Locate suspicious content (tweet/thread/account)
@@ -121,6 +49,9 @@ Net:clu/repost/infl
 3. Reply to target with the prompt
 4. Wait for AI forensic analysis
 5. Review detailed findings
+
+> [!TIP]  
+> For best results, run Prompt 1, wait for the response, then reply to Prompt 1 with Prompt 2.
 
 Instant forensic analysis - no setup required.
 
