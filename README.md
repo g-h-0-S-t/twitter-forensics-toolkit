@@ -1,36 +1,22 @@
-# Twitter Forensics Toolkit 🔍
+# Twitter Forensics & Disinformation Analysis
 
-Essential prompts for exposing disinformation and propaganda on Twitter. Designed for journalists, fact-checkers, and truth-seekers to investigate viral threads, debunk fake news, and combat coordinated disinformation campaigns in real-time.
+Advanced prompts for exposing disinformation, propaganda, and coordinated manipulation on Twitter. Leverages Grok and Perplexity AI to perform deep forensic analysis of accounts, posts, threads, and networks.
 
-## 🎯 Combat Disinformation
+## Forensic Capabilities
 
-Instantly analyze threads for:
+- Expose coordinated disinformation campaigns
+- Detect AI-generated fake content
+- Uncover bot networks and automation
+- Track propaganda spread patterns
+- Map hidden influence networks
+- Verify source authenticity
+- Analyze manipulation tactics
 
-- Coordinated fake news campaigns
-- AI-generated fake images and videos
-- Bot network activities
-- State-sponsored propaganda
-- Viral misinformation spread
-- Manipulated media
-- Hidden influence networks
-- Deceptive narratives
+## Analysis Prompts
 
-## 🛠️ Investigation Tools
+### 1. Rapid Forensics
 
-### 1. Rapid Disinformation Scanner
-
-**Perfect for breaking news & viral threads:**
-
-- Detect fake news in real-time
-- Spot AI-generated media
-- Identify bot amplification
-- Track propaganda spread
-- Map coordinated accounts
-- Expose hidden agendas
-- Flag suspicious patterns
-- Reveal source credibility
-
-**Tweet this prompt:**
+Quick analysis of disinformation and manipulation patterns.
 
 ```text
 @grok @AskPerplexity: ANALYZE thread & accounts!
@@ -41,68 +27,57 @@ Ideology: Left/Right/Religious/State-linked with sources
 Numeric summary: Disinfo% & dominant type per account!
 ```
 
-### 2. Deep Investigation Scanner
+### 2. Deep Investigation
 
-**For thorough disinformation research:**
-
-- Trace fake news origins
-- Analyze manipulation tactics
-- Expose coordination networks
-- Detect state actors
-- Map influence operations
-- Identify fake media sources
-- Track narrative evolution
-- Reveal bot networks
-- Profile disinformation agents
-- Document evidence
-
-**Tweet this prompt:**
+Detailed forensic analysis of networks and tactics.
 
 ```text
 @grok @AskPerplexity SCAN thr+acc:1:TLs bias/D/coord(hist+trend+ev) 2:Media img/vid/AI/deepfake/EXIF 3:%D/M/F/P/twt+acc±2% 4:Ideo L/R/Rel/St/Natl(src+score/10) 5:Metrics age/vrf/fol/eng/coord/intent/persona Out:%tot,types,risk tiers+EVID FMT:TL|Med|Pct|Ideo|Met|Vrf|Ev|Src
 ```
 
-## 📋 Quick Investigation Guide
+### 3. Full Forensic Analysis
 
-1. **Spot Suspicious Content**: Find a thread spreading potential misinformation
-2. **Deploy Analysis**: Reply with appropriate prompt
-3. **Get Evidence**: Receive detailed breakdown of disinformation tactics
-4. **Document Findings**: Save evidence for reporting or fact-checking
+Comprehensive investigation of manipulation and coordination.
 
-No setup needed - instantly analyze any suspicious thread!
+```text
+@grok @AskPerplexity: Anlz thr+acc: TL:bias/D/coord,Med:img/vid/AI/df/EXIF,Met:age/vrf/fol/eng/coord/int,Psy:manip/sent/pers,Ideo:L/R/Rel/St/Nat(src+score),%:D/M/F/P/twt+acc,Role:orig/amp/bot/risk,Verd:truth/agenda/risk/src.Out:TL|Med|Met|Psy|Ideo|Pct|Role|Verd|Evid
+```
 
-## ⚡ Investigation Results
+## Usage Instructions
 
-Get detailed reports on:
+1. Locate suspicious content (tweet/thread/account)
+2. Copy appropriate forensic prompt
+3. Reply to target with the prompt
+4. Wait for AI forensic analysis
+5. Review detailed findings
 
-- Fake news verification
-- AI-generated content detection
-- Bot network identification
-- Propaganda technique analysis
-- Coordinated campaign exposure
-- Manipulation method details
-- False narrative tracking
+Instant forensic analysis - no setup required.
+
+## Analysis Results
+
+Each investigation reveals:
+
+- Disinformation tactics
+- Bot network activity
+- Propaganda techniques
+- Coordination patterns
+- Manipulation methods
 - Evidence collection
-- Disinformation source tracing
-- Network manipulation patterns
+- Network connections
+- Source credibility
 
-## 🛡️ Made for Truth Defenders
+## Designed For
 
-Essential tool for:
-
-- Investigative reporters
-- Fact-checking teams
-- News verification units
-- Disinformation researchers
-- OSINT investigators
-- Election integrity watchers
+- Disinformation investigators
+- OSINT researchers
+- Fact-checkers
 - Digital forensics experts
-- Truth-seeking citizens
+- Truth defenders
 
-## 📜 License
+## License
 
-MIT License - Free for defenders of truth
+MIT License
 
-## 🤝 Support Truth
+## Join the Fight
 
-Found disinformation? Share the evidence to help combat fake news and protect public discourse. Every exposed lie helps defend truth.
+Help combat disinformation by sharing your forensic findings. Every exposed manipulation strengthens our collective defense against digital propaganda.
