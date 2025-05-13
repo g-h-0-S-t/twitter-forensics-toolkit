@@ -84,7 +84,14 @@ FMT:Per Acc
 iteration 3
 
 ```text
-@grok+@AskPerplexity+@TheCyabra+@Dataminr+@ZeroDefendSecSCAN:thr+acc→1:TL:bias/D/coord(hist+trend+ev),2:Med:img/vid/AI/df/EXIF,3:%:D/M/F/P/twt+acc±2%,4:Ideo:L/R/Rel/St/Natl(src+score/10),5:Met:age/vrf/fol/eng/coord/intent/persona.→%tot,types,risk_tiers,evid.FMT:1|2|3|4|5|Ev|Src
+@grok @AskPerplexity @TheCyabra @Dataminr @ZeroDefendSec SCAN thr+acc
+1:TL:bias/D/coord(hist+trend+ev)
+2:Med:img/vid/AI/df/EXIF
+3:%:D/M/F/P/twt+acc±2%
+4:Ideo:L/R/Rel/St/Natl(src+score/10)
+5:Met:age/vrf/fol/eng/coord/intent/persona
+→%tot,types,risk_tiers,evid
+FMT:1|2|3|4|5|Ev|Src
 ```
 
 iteration 4
