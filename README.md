@@ -75,10 +75,10 @@ Psy:sent/tone/manip/pers
 I:L/R/Rel/St/N(src+scor/10)
 %:D/M/F/P/twt+acc±2%
 Role:orig/amp/bot/rk
-Verd:tr/ag/evid/src
+Verd:tr/ag/ev/src
 Num:D%/typ/acc
-Net:cluster/repost/infl
-FMT:Per Acc
+Net:clu/repost/infl
+FMT:Per Acc Tag:@
 ```
 
 
