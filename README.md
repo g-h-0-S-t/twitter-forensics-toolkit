@@ -63,7 +63,7 @@ Num:Disinfo%&type/acc
 OR
 
 ```
-@grok+@AskPerplexity:ANLZ+thread+accounts:TL:bias/D/coord/hist/trend/ev,Med:img/vid/AI/df/EXIF,Met:age/vrf/fol/eng/coord/int,Psy:manip/sent/pers,Ideo:L/R/Rel/St/Nat(src+scor/10),%:D/M/F/P/twt+acc±2%,Role:orig/amp/bot/risk,Verd:truth/agenda/rsk/evid/src,Num:Disinfo%&type/acc
+@grok+@AskPerplexity:ANLZ:thr+acc:TL:bias/D/coord/hist/trend/ev,Med:img/vid/AI/df/EXIF,Met:age/vrf/fol/eng/coord/int,Psy:manip/sent/pers,Ideo:L/R/Rel/St/Nat(src+scor/10),%:D/M/F/P/twt+acc±2%,Role:orig/amp/bot/risk,Verd:truth/agenda/rsk/evid/src,Num:Disinfo%&type/acc
 ```
 
 ## Usage Instructions
