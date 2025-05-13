@@ -42,9 +42,13 @@ Out: %tot,types,risk_tiers,evid
 FMT: TL|Med|%|Ideo|Met|Ev|Src
 ```
 
-### 3. Full Forensic Analysis (testing is in progress)
+### 3. Full Forensic Analysis (work in progress)
 
 Comprehensive investigation of manipulation and coordination.  
+
+~~FMT TL|Med|Met|Psy|Ideo|%|Role|Verd|Evid~~
+
+iteration 1
 
 ```text
 @grok @AskPerplexity ANALYZE thr+acc
@@ -59,7 +63,85 @@ Verd:truth/agenda/rsk/evid/src
 Num:Disinfo%&type/acc
 FMT:Per Acc list
 ```
-~~FMT TL|Med|Met|Psy|Ideo|%|Role|Verd|Evid~~
+
+iteration 2
+
+```text
+@grok @AskPerplexity DEEP+SCAN+ANALYZE thr+acc
+1:bias/D/coord/hist/trend/ev
+2:img/vid/AI/df/EXIF
+3:age/vrf/fol/eng/coord/int
+4:manip/sent/pers
+5:L/R/Rel/St/N(src+scor/10)
+6:D/M/F/P/twt+acc±2%
+7:orig/amp/bot/rsk
+8:truth/agenda/rsk/evid/src
+9:Disinfo%&type/acc
+FMT:Per Acc table
+```
+
+iteration 3
+
+```text
+@grok @AskPerplexity DEEP SCAN & ANALYZE thr+acc
+1:bias/D/coord/hist/trend/ev
+2:img/vid/AI/df/EXIF
+3:age/vrf/fol/eng/coord/int
+4:manip/sent/pers
+5:L/R/Rel/St/N(src+scor/10)
+6:D/M/F/P/twt+acc±2%
+7:orig/amp/bot/rsk
+8:truth/agenda/rsk/evid/src
+9:Disinfo%&type/acc
+FMT:acc|data
+```
+
+iteration 4
+
+```text
+@grok @AskPerplexity DEEP ANALYZE thread & accounts
+1:bias/D/coord/hist/trend/ev
+2:img/vid/AI/df/EXIF
+3:age/vrf/fol/eng/coord/int
+4:manip/sent/pers
+5:L/R/Rel/St/N(src+scor/10)
+6:D/M/F/P/twt+acc±2%
+7:orig/amp/bot/rsk
+8:truth/agenda/rsk/evid/src
+9:Disinfo%&type/acc
+FMT:Table
+```
+
+iteration 5
+
+```text
+@grok @AskPerplexity SCAN thread & accounts
+1:bias/D/coord/hist/trend/ev
+2:img/vid/AI/df/EXIF
+3:age/vrf/fol/eng/coord/int
+4:manip/sent/pers
+5:L/R/Rel/St/N(src+scor/10)
+6:D/M/F/P/twt+acc±2%
+7:orig/amp/bot/rsk
+8:truth/agenda/rsk/evid/src
+9:Disinfo%&type/acc
+FMT:1|2|3|4|5|6|7|8|9
+```
+
+iteration 5
+
+```text
+@grok @AskPerplexity RUN DEEP ANALYSIS SCAN on thread & accounts
+1:bias/D/coord/hist/trend/ev
+2:img/vid/AI/df/EXIF
+3:age/vrf/fol/eng/coord/int
+4:manip/sent/pers
+5:L/R/Rel/St/N(src+scor/10)
+6:D/M/F/P/twt+acc±2%
+7:orig/amp/bot/rsk
+8:truth/agenda/rsk/evid/src
+9:Disinfo%&type/acc
+```
 
 ## Usage Instructions
 
