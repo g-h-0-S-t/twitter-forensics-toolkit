@@ -47,7 +47,7 @@ FMT: TL|Med|%|Ideo|Met|Ev|Src
 Comprehensive investigation of manipulation and coordination.  
 
 ```text
-@grok @AskPerplexity SCAN & ANALYZE thread & accounts
+@grok @AskPerplexity SCN+ANLZ thr+acc
 TL bias/D/coord/hist/trend/ev
 Med img/vid/AI/df/EXIF
 Met age/vrf/fol/eng/coord/int
@@ -56,6 +56,7 @@ Ideo L/R/Rel/St/Nat(src+score/10)
 % D/M/F/P/twt+acc±2%
 Role orig/amp/bot/risk
 Verd truth/agenda/risk/evid/src
+Num:Disinfo%&top type/acc
 ```
 ~~FMT TL|Med|Met|Psy|Ideo|%|Role|Verd|Evid~~
 
