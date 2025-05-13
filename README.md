@@ -19,12 +19,12 @@ Advanced prompts for exposing disinformation, propaganda, and coordinated manipu
 Quick analysis of disinformation and manipulation patterns.
 
 ```text
-@grok @AskPerplexity: ANALYZE thread & accounts!
+@grok @AskPerplexity: ANALYZE thread & accounts
 Timelines: bias/disinfo
 Media: images/videos
 % breakdown: Disinfo/Misinfo/Fake/Propaganda per tweet/account
 Ideology: Left/Right/Religious/State-linked with sources
-Numeric summary: Disinfo% & dominant type per account!
+Numeric summary: Disinfo% & dominant type per account
 ```
 
 ### 2. Deep Investigation
@@ -47,18 +47,24 @@ FMT: TL|Med|%|Ideo|Met|Ev|Src
 Comprehensive investigation of manipulation and coordination.  
 
 ```text
-@grok @AskPerplexity SCN+ANLZ thr+acc
-TL bias/D/coord/hist/trend/ev
-Med img/vid/AI/df/EXIF
-Met age/vrf/fol/eng/coord/int
-Psy manip/sent/pers
-Ideo L/R/Rel/St/Nat(src+score/10)
-% D/M/F/P/twt+acc±2%
-Role orig/amp/bot/risk
-Verd truth/agenda/risk/evid/src
-Num:Disinfo%&top type/acc
+@grok @AskPerplexity: ANALYZE thread & accounts
+TL:bias/D/coord/hist/trend/ev
+Med:img/vid/AI/df/EXIF
+Met:age/vrf/fol/eng/coord/int
+Psy:manip/sent/pers
+Ideo:L/R/Rel/St/Nat(src+scor/10)
+%:D/M/F/P/twt+acc±2%
+Role:orig/amp/bot/rsk
+Verd:truth/agenda/rsk/evid/src
+Num:Disinfo%&type/acc
 ```
 ~~FMT TL|Med|Met|Psy|Ideo|%|Role|Verd|Evid~~
+
+OR
+
+```
+@grok+@AskPerplexity:ANLZ+thread+accounts:TL:bias/D/coord/hist/trend/ev,Med:img/vid/AI/df/EXIF,Met:age/vrf/fol/eng/coord/int,Psy:manip/sent/pers,Ideo:L/R/Rel/St/Nat(src+scor/10),%:D/M/F/P/twt+acc±2%,Role:orig/amp/bot/risk,Verd:truth/agenda/rsk/evid/src,Num:Disinfo%&type/acc
+```
 
 ## Usage Instructions
 
