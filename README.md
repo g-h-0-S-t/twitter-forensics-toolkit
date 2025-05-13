@@ -32,7 +32,7 @@ Numeric summary: Disinfo% & dominant type per acc
 Detailed forensic analysis of networks and tactics.
 
 ```text
-@grok @AskPerplexity SCAN thr+all+acc exc:self
+@grok @AskPerplexity SCAN thr+all+acc exclude:self
 1:TL bias/D/coord(hist+trend+ev)
 2:Med img/vid/AI/df/EXIF
 3:% D/M/F/P/twt+acc±2%
