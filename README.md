@@ -51,7 +51,7 @@ FMT:per acc tag:@(xpnd abbr)|Evid|Src
 5. Review detailed findings
 
 > [!TIP]  
-> For best results, run Prompt 1 then reply to Prompt 1 with Prompt 2.
+> For best results reply to target with Prompt 1 then reply to Prompt 1 with Prompt 2.
 
 Instant forensic analysis - no setup required.
 
