@@ -19,12 +19,12 @@ Advanced prompts for exposing disinformation, propaganda, and coordinated manipu
 Quick analysis of disinformation and manipulation patterns.
 
 ```text
-@grok @AskPerplexity ANALYZE threads & accounts
+@grok @AskPerplexity ANALYZE threads & accounts exclude:self
 Timelines: bias/disinfo
 Media: images/videos
-% breakdown: Disinfo/Misinfo/Fake/Propaganda per tweet/account
+% breakdown: Disinfo/Misinfo/Fake/Propaganda per tweet/account ±2%
 Ideology: Left/Right/Religious/State-linked with sources
-Numeric summary: Disinfo% & dominant type per account
+Numeric summary: Disinfo% & dominant type per acc
 ```
 
 ### 2. Deep Investigation
@@ -32,7 +32,7 @@ Numeric summary: Disinfo% & dominant type per account
 Detailed forensic analysis of networks and tactics.
 
 ```text
-@grok @AskPerplexity SCAN thr+acc
+@grok @AskPerplexity SCAN thr+acc exclude:self
 1: TL bias/D/coord(hist+trend+ev)
 2: Med img/vid/AI/df/EXIF
 3: % D/M/F/P/twt+acc±2%
