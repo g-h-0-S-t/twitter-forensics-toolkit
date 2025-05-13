@@ -68,15 +68,15 @@ iteration 2
 
 ```text
 @grok @AskPerplexity SCAN thr+acc
-TL:bias/hist/trend/ev
+TL:bias/D/coord/hist/trend/ev
 Med:img/vid/AI/df/EXIF
-Met:age/vrf/fol/freq/loc/spam
+Met:age/vrf/fol/frq/loc/sp
 Psy:sent/tone/manip/pers
 I:L/R/Rel/St/N(src+scor/10)
 %:D/M/F/P/twt+acc±2%
-Role:orig/amp/bot/risk
-Verd:tr/agenda/evid
-Num:D%/type/acc
+Role:orig/amp/bot/rk
+Verd:tr/ag/evid/src
+Num:D%/typ/acc
 Net:cluster/repost/infl
 FMT:Per Acc
 ```
