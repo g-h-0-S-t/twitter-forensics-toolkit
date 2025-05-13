@@ -32,16 +32,32 @@ Numeric summary: Disinfo% & dominant type per account!
 Detailed forensic analysis of networks and tactics.
 
 ```text
-@grok @AskPerplexity SCAN thr+acc 1:TLs bias/D/coord(hist+trend+ev) 2:Media img/vid/AI/deepfake/EXIF 3:%D/M/F/P/twt+acc±2% 4:Ideo L/R/Rel/St/Natl(src+score/10) 5:Metrics age/vrf/fol/eng/coord/intent/persona Out:%tot,types,risk tiers+EVID FMT:TL|Med|Pct|Ideo|Met|Vrf|Ev|Src
+@grok @AskPerplexity SCAN thr+acc
+1: TL bias/D/coord(hist+trend+ev)
+2: Med img/vid/AI/df/EXIF
+3: % D/M/F/P/twt+acc±2%
+4: Ideo L/R/Rel/St/Natl(src+score/10)
+5: Met age/vrf/fol/eng/coord/intent/persona
+Out: %tot,types,risk_tiers,evid
+FMT: TL|Med|%|Ideo|Met|Ev|Src
 ```
 
-### 3. Full Forensic Analysis
+### 3. Full Forensic Analysis (testing in progress)
 
-Comprehensive investigation of manipulation and coordination.
+Comprehensive investigation of manipulation and coordination.  
 
 ```text
-@grok @AskPerplexity DFIR+ANLZ+SCAN thr+acc TL:bias/D/coord,Med:img/vid/AI/df/EXIF,Met:age/vrf/fol/eng/coord/int,Psy:manip/sent/pers,Ideo:L/R/Rel/St/Nat(src+score/10),%:D/M/F/P/twt+acc±2%,Role:orig/amp/bot/risk,Verd:truth/agenda/risk/src.Out:TL|Med|Met|Psy|Ideo|Pct|Role|Verd|Evid
+@grok @AskPerplexity SCAN & ANALYZE thread & accounts
+TL bias/D/coord/hist/trend/ev
+Med img/vid/AI/df/EXIF
+Met age/vrf/fol/eng/coord/int
+Psy manip/sent/pers
+Ideo L/R/Rel/St/Nat(src+score/10)
+% D/M/F/P/twt+acc±2%
+Role orig/amp/bot/risk
+Verd truth/agenda/risk/evid/src
 ```
+~~FMT TL|Med|Met|Psy|Ideo|%|Role|Verd|Evid~~
 
 ## Usage Instructions
 
