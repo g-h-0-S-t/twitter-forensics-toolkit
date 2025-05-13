@@ -143,6 +143,33 @@ iteration 5
 9:Disinfo%&type/acc
 ```
 
+
+
+
+
+
+
+### 3. Per Account Analysis (work in progress)
+
+Account investigation
+```text
+@grok @AskPerplexity SCAN thr+acc
+TL:bias/hist/trend/ev
+Med:img/vid/AI/df/EXIF
+Met:age/vrf/fol/freq/loc/spam
+Psy:sent/tone/manip/pers
+I:L/R/Rel/St/N(src+scor/10)
+%:D/M/F/P/twt+acc±2%
+Role:orig/amp/bot/risk
+Verd:tr/agenda/evid
+Num:D%/type/acc
+Net:cluster/repost/infl
+FMT:Per Acc
+```
+
+
+
+
 ## Usage Instructions
 
 1. Locate suspicious content (tweet/thread/account)
