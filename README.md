@@ -82,6 +82,21 @@ FMT:Per Acc
 ```
 
 
+```text
+@grok @AskPerplexity SCN thr+acc
+TL:bias/D/coord/hist/trend/ev
+Med:img/vid/AI/df/EXIF
+Met:age/vrf/fol/frq/loc/sp
+Psy:sent/tone/manip/pers
+I:L/R/Rel/St/N(src+scor/10)
+%:D/M/F/P/twt+acc±2%
+Role:orig/amp/bot/rk
+Verd:tr/ag/ev/src
+Num:D%/typ/acc
+Net:clu/repost/infl
+→D%+details/acc
+```
+
 
 
 ## Usage Instructions
