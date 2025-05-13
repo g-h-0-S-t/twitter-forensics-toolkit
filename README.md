@@ -40,7 +40,7 @@ Detailed forensic analysis of networks and tactics.
 Comprehensive investigation of manipulation and coordination.
 
 ```text
-@grok @AskPerplexity DFIR+ANLZ+SCAN:thr+acc:TL:bias/D/coord,Med:img/vid/AI/df/EXIF,Met:age/vrf/fol/eng/coord/int,Psy:manip/sent/pers,Ideo:L/R/Rel/St/Nat(src+score/10),%:D/M/F/P/twt+acc±2%,Role:orig/amp/bot/risk,Verd:truth/agenda/risk/src.Out:TL|Med|Met|Psy|Ideo|Pct|Role|Verd|Evid
+@grok @AskPerplexity DFIR+ANLZ+SCAN thr+acc TL:bias/D/coord,Med:img/vid/AI/df/EXIF,Met:age/vrf/fol/eng/coord/int,Psy:manip/sent/pers,Ideo:L/R/Rel/St/Nat(src+score/10),%:D/M/F/P/twt+acc±2%,Role:orig/amp/bot/risk,Verd:truth/agenda/risk/src.Out:TL|Med|Met|Psy|Ideo|Pct|Role|Verd|Evid
 ```
 
 ## Usage Instructions
