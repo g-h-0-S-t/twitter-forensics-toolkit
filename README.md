@@ -1,6 +1,6 @@
 # 𝕏 Forensics Toolkit
 
-Advanced prompts for exposing disinformation, propaganda, and coordinated manipulation on Twitter. Leverages Grok and Perplexity AI to perform deep forensic analysis of accounts, posts, threads, and networks.
+Advanced prompts for exposing disinformation, propaganda, and coordinated manipulation on 𝕏. Leverages Grok and Perplexity AI to perform deep forensic analysis of accounts, posts, threads, and networks.
 
 ## Forensic Capabilities
 
