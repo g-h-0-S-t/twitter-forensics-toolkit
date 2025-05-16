@@ -53,7 +53,8 @@ Delivers a detailed forensic examination of threats, doxxing, and cyberbullying 
 @grok @AskPerplexity
 SCAN thr+all+acc exc:self
 Scope:h/thrt/dox/bully
-Med:txt/img/vid/EXIF/AI/Arch %bd:Expl/Vl/Offend/Hate±2%
+Med:txt/img/vid/EXIF/AI/Arch
+%bd:Expl/Vl/Offend/Hate±2%
 Sev:0-100 Tgt:Ind/Grp[Race/Gendr/sexL]
 Ctx:Coord?[Burst/Alt/Xthr]/Hist/EngVel
 Risk:T1-4[ECPA/CFAA] PlatViol
