@@ -22,7 +22,7 @@ A sophisticated suite of advanced prompts designed to uncover and analyze disinf
 Performs a swift yet thorough analysis of disinformation and manipulation patterns across targeted content.
 
 ```text
-@grok @AskPerplexity ANALYZE threads & accounts exclude:self
+@grok+@AskPerplexity ANALYZE threads & accounts exclude:self
 Timelines: bias/disinfo
 Media: images/videos
 % breakdown: Disinfo/Misinfo/Fake/Propaganda per tweet/account ±2%
@@ -35,7 +35,7 @@ Numeric summary: Disinfo% & dominant type per acc
 Conducts an exhaustive forensic analysis of networks, tactics, and underlying motivations.
 
 ```text
-@grok @AskPerplexity SCAN thr+all+acc exclude:self
+@grok+@AskPerplexity SCAN thr+all+acc exclude:self
 1:TL bias/D/coord(hist+trend+ev)
 2:Med img/vid/AI/df/EXIF
 3:% D/M/F/P/twt+acc±2%
@@ -50,8 +50,7 @@ FMT:per acc tag:@(xpnd abbr)|Evid|Src
 Delivers a detailed forensic examination of threats, doxxing, and cyberbullying activities.
 
 ```text
-@grok @AskPerplexity
-SCAN thr+all+acc exc:self
+@grok+@AskPerplexity SCAN thr+all+acc exc:self
 Scope:h/thrt/dox/bully
 Med:txt/img/vid/EXIF/AI/Arch
 %bd:Expl/Vl/Offend/Hate±2%
